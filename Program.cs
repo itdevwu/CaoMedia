@@ -62,7 +62,7 @@ namespace CaoMedia
 
             if (outputFormat == 3)
             {
-                Suffix = ".wmi";
+                Suffix = ".wmv";
             }
 
             if (outputFormat == 4)

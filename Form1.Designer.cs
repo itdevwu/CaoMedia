@@ -51,7 +51,7 @@
             this.inputPathBox.AllowDrop = true;
             this.inputPathBox.Location = new System.Drawing.Point(8, 32);
             this.inputPathBox.Name = "inputPathBox";
-            this.inputPathBox.Size = new System.Drawing.Size(474, 25);
+            this.inputPathBox.Size = new System.Drawing.Size(474, 42);
             this.inputPathBox.TabIndex = 0;
             this.inputPathBox.TextChanged += new System.EventHandler(this.inputPathBox_TextChanged);
             // 
@@ -76,7 +76,7 @@
             // 
             this.outputPathTextBox.Location = new System.Drawing.Point(8, 63);
             this.outputPathTextBox.Name = "outputPathTextBox";
-            this.outputPathTextBox.Size = new System.Drawing.Size(474, 25);
+            this.outputPathTextBox.Size = new System.Drawing.Size(474, 42);
             this.outputPathTextBox.TabIndex = 3;
             // 
             // outputPathButton
@@ -91,13 +91,14 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileOpTopStripe,
             this.关于ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(489, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(489, 43);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -107,13 +108,13 @@
             this.exitTopStripe});
             this.fileOpTopStripe.Font = new System.Drawing.Font("思源黑体", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.fileOpTopStripe.Name = "fileOpTopStripe";
-            this.fileOpTopStripe.Size = new System.Drawing.Size(44, 21);
+            this.fileOpTopStripe.Size = new System.Drawing.Size(83, 39);
             this.fileOpTopStripe.Text = "文件";
             // 
             // exitTopStripe
             // 
             this.exitTopStripe.Name = "exitTopStripe";
-            this.exitTopStripe.Size = new System.Drawing.Size(100, 22);
+            this.exitTopStripe.Size = new System.Drawing.Size(197, 44);
             this.exitTopStripe.Text = "退出";
             this.exitTopStripe.Click += new System.EventHandler(this.exitTopStripe_Click);
             // 
@@ -122,14 +123,14 @@
             this.关于ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.versionTopStripe});
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(82, 39);
             this.关于ToolStripMenuItem.Text = "关于";
             // 
             // versionTopStripe
             // 
             this.versionTopStripe.Font = new System.Drawing.Font("思源黑体", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.versionTopStripe.Name = "versionTopStripe";
-            this.versionTopStripe.Size = new System.Drawing.Size(124, 22);
+            this.versionTopStripe.Size = new System.Drawing.Size(244, 44);
             this.versionTopStripe.Text = "版本信息";
             this.versionTopStripe.Click += new System.EventHandler(this.versionTopStripe_Click);
             // 
@@ -140,7 +141,7 @@
             this.formatComboBox.Items.AddRange(new object[] {
             "mp4",
             "hevc",
-            "wmi",
+            "wmv",
             "mov",
             "m4v",
             "avi",
@@ -151,7 +152,7 @@
             "flac"});
             this.formatComboBox.Location = new System.Drawing.Point(91, 123);
             this.formatComboBox.Name = "formatComboBox";
-            this.formatComboBox.Size = new System.Drawing.Size(105, 25);
+            this.formatComboBox.Size = new System.Drawing.Size(105, 43);
             this.formatComboBox.TabIndex = 6;
             this.formatComboBox.Text = "选择输出格式";
             // 
@@ -160,7 +161,7 @@
             this.ultrafastModeCheckBox.AutoSize = true;
             this.ultrafastModeCheckBox.Location = new System.Drawing.Point(202, 125);
             this.ultrafastModeCheckBox.Name = "ultrafastModeCheckBox";
-            this.ultrafastModeCheckBox.Size = new System.Drawing.Size(75, 21);
+            this.ultrafastModeCheckBox.Size = new System.Drawing.Size(143, 39);
             this.ultrafastModeCheckBox.TabIndex = 7;
             this.ultrafastModeCheckBox.Text = "极速模式";
             this.ultrafastModeCheckBox.UseVisualStyleBackColor = true;
@@ -181,13 +182,13 @@
             this.formatLabel.AutoSize = true;
             this.formatLabel.Location = new System.Drawing.Point(5, 126);
             this.formatLabel.Name = "formatLabel";
-            this.formatLabel.Size = new System.Drawing.Size(80, 17);
+            this.formatLabel.Size = new System.Drawing.Size(159, 35);
             this.formatLabel.TabIndex = 10;
             this.formatLabel.Text = "目标文件格式";
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 35F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(489, 155);
             this.Controls.Add(this.formatLabel);
