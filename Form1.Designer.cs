@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.inputPathBox = new System.Windows.Forms.TextBox();
             this.inputFileButton = new System.Windows.Forms.Button();
             this.convertProgressBar = new System.Windows.Forms.ProgressBar();
@@ -50,7 +51,7 @@
             this.inputPathBox.AllowDrop = true;
             this.inputPathBox.Location = new System.Drawing.Point(8, 32);
             this.inputPathBox.Name = "inputPathBox";
-            this.inputPathBox.Size = new System.Drawing.Size(474, 38);
+            this.inputPathBox.Size = new System.Drawing.Size(474, 25);
             this.inputPathBox.TabIndex = 0;
             this.inputPathBox.TextChanged += new System.EventHandler(this.inputPathBox_TextChanged);
             // 
@@ -75,7 +76,7 @@
             // 
             this.outputPathTextBox.Location = new System.Drawing.Point(8, 63);
             this.outputPathTextBox.Name = "outputPathTextBox";
-            this.outputPathTextBox.Size = new System.Drawing.Size(474, 38);
+            this.outputPathTextBox.Size = new System.Drawing.Size(474, 25);
             this.outputPathTextBox.TabIndex = 3;
             // 
             // outputPathButton
@@ -96,7 +97,7 @@
             this.关于ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(489, 38);
+            this.menuStrip1.Size = new System.Drawing.Size(489, 25);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -106,13 +107,13 @@
             this.exitTopStripe});
             this.fileOpTopStripe.Font = new System.Drawing.Font("思源黑体", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.fileOpTopStripe.Name = "fileOpTopStripe";
-            this.fileOpTopStripe.Size = new System.Drawing.Size(73, 34);
+            this.fileOpTopStripe.Size = new System.Drawing.Size(44, 21);
             this.fileOpTopStripe.Text = "文件";
             // 
             // exitTopStripe
             // 
             this.exitTopStripe.Name = "exitTopStripe";
-            this.exitTopStripe.Size = new System.Drawing.Size(173, 40);
+            this.exitTopStripe.Size = new System.Drawing.Size(100, 22);
             this.exitTopStripe.Text = "退出";
             this.exitTopStripe.Click += new System.EventHandler(this.exitTopStripe_Click);
             // 
@@ -121,14 +122,14 @@
             this.关于ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.versionTopStripe});
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(72, 34);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.关于ToolStripMenuItem.Text = "关于";
             // 
             // versionTopStripe
             // 
             this.versionTopStripe.Font = new System.Drawing.Font("思源黑体", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.versionTopStripe.Name = "versionTopStripe";
-            this.versionTopStripe.Size = new System.Drawing.Size(315, 40);
+            this.versionTopStripe.Size = new System.Drawing.Size(124, 22);
             this.versionTopStripe.Text = "版本信息";
             this.versionTopStripe.Click += new System.EventHandler(this.versionTopStripe_Click);
             // 
@@ -150,7 +151,7 @@
             "flac"});
             this.formatComboBox.Location = new System.Drawing.Point(91, 123);
             this.formatComboBox.Name = "formatComboBox";
-            this.formatComboBox.Size = new System.Drawing.Size(105, 38);
+            this.formatComboBox.Size = new System.Drawing.Size(105, 25);
             this.formatComboBox.TabIndex = 6;
             this.formatComboBox.Text = "选择输出格式";
             // 
@@ -159,7 +160,7 @@
             this.ultrafastModeCheckBox.AutoSize = true;
             this.ultrafastModeCheckBox.Location = new System.Drawing.Point(202, 125);
             this.ultrafastModeCheckBox.Name = "ultrafastModeCheckBox";
-            this.ultrafastModeCheckBox.Size = new System.Drawing.Size(123, 34);
+            this.ultrafastModeCheckBox.Size = new System.Drawing.Size(75, 21);
             this.ultrafastModeCheckBox.TabIndex = 7;
             this.ultrafastModeCheckBox.Text = "极速模式";
             this.ultrafastModeCheckBox.UseVisualStyleBackColor = true;
@@ -180,15 +181,15 @@
             this.formatLabel.AutoSize = true;
             this.formatLabel.Location = new System.Drawing.Point(5, 126);
             this.formatLabel.Name = "formatLabel";
-            this.formatLabel.Size = new System.Drawing.Size(139, 30);
+            this.formatLabel.Size = new System.Drawing.Size(80, 17);
             this.formatLabel.TabIndex = 10;
             this.formatLabel.Text = "目标文件格式";
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 164);
+            this.ClientSize = new System.Drawing.Size(489, 155);
             this.Controls.Add(this.formatLabel);
             this.Controls.Add(this.startConvertButton);
             this.Controls.Add(this.ultrafastModeCheckBox);
@@ -201,6 +202,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("思源黑体", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "mainForm";

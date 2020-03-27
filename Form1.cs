@@ -73,9 +73,19 @@ namespace CaoMedia
             MessageBox.Show("CaoMedia：一个简单好用的音视频处理工具\nDeveloped by Zhenglong WU\n版本 0.1.0", "版本信息");
         }
 
-        private void startConvertButton_Click(object sender, EventArgs e)
+        private bool readyForConvert()
         {
-            convertProgressBar.Value = 1;
+            bool _status;
+            if (inputPathBox.TextLength > 0 && outputPathTextBox.TextLength > 0 && formatComboBox.SelectedIndex > -1)
+                _status = true;
+            else
+                _status = false;
+            return _status;
+        }
+
+        private void ffConvert()
+        {
+            convertProgressBar.Value = 10;
             ConvertMissionClass convertMission = new ConvertMissionClass();
             convertMission.inputFilePathName = inputPathBox.Text;
             convertMission.outputFormat = formatComboBox.SelectedIndex + 1;
@@ -87,6 +97,18 @@ namespace CaoMedia
             convertMission.ffmpegConvert();
             convertProgressBar.Value = 100;
             MessageBox.Show("处理完成！", "完成提示");
+        }
+
+        private void startConvertButton_Click(object sender, EventArgs e)
+        {
+            if (readyForConvert() == true)
+            {
+                ffConvert();
+            }
+            else
+            {
+                MessageBox.Show("不能进行转换！\n尚未完成设置！", "错误");
+            }
         }
     }
 }
